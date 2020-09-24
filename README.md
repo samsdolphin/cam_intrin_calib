@@ -9,8 +9,9 @@ image_path is the folder to save the captured images\
 board_width and board_height are the number of inner crosspoint of your checker board
 
 Try to cover the full filed with those gree rectangles. Usually we recommend ~300 photos.
-![Start](..\fig\begin.png)
-![End](..\fig\end.png)
+
+![Start](fig/begin.png)
+![End](fig/end.png)
 
 Then calibrate the intrinsic parameters with the following instruction, where `-s` is the length of a single square on your checker board in mm.
 >rosrun camera_model Calibration -w 9 -h 6 -s 36 -i /home/sam/images -p IMG_ -e .jpg --camera-model pinhole
