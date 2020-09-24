@@ -1,0 +1,1 @@
+rosrun camera_model Calibration -w 9 -h 6 -s 36 -i /home/sam/images -p IMG_ -e .jpg --camera-model pinhole
