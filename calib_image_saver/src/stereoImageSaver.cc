@@ -13,6 +13,7 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/imgproc/imgproc_c.h>
 
 #include "../include/calib_image_saver/chessboard/Chessboard.h"
 
@@ -116,7 +117,7 @@ imageProcessCallback( const sensor_msgs::ImageConstPtr& left_image_msg, const se
         is_first_run = false;
 
         if ( is_show )
-            cv::namedWindow( "DistributedImage", CV_WINDOW_NORMAL );
+            cv::namedWindow( "DistributedImage", cv::WINDOW_NORMAL );
     }
 
     if ( is_show )
